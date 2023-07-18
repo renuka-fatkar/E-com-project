@@ -1,0 +1,22 @@
+<h1>Rate the Product</h1>
+
+<form [formGroup]="ratingForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="rating">Rating:</label>
+    <input type="number" formControlName="rating" id="rating">
+  </div>
+  <div>
+    <label for="comment">Comment:</label>
+    <textarea formControlName="comment" id="comment"></textarea>
+  </div>
+  <button type="submit">Submit Rating</button>
+</form>
+
+<hr>
+
+<h2>Previous Ratings</h2>
+
+<div *ngFor="let rating of ratings">
+  <p>Rating: {{ rating.rating }}</p>
+  <p>Comment: {{ rating.comment }}</p>
+</div>

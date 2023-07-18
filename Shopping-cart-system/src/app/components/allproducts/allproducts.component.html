@@ -1,0 +1,117 @@
+<!-- <div>
+    <h1>Welcome Seller</h1>
+    <h3>New Product in Market?</h3>
+    <button (click)="addNewProduct()">Click Here To Add</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th class="category">Jewellery</th>
+            <th class="category">Electronics</th>
+            <th class="category">Clothes</th>
+            <th class="category">Decores</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="main-data">
+                <tr>
+                    <th class="details">Name</th>
+                    <th class="details">Price</th>
+                    <th class="details">specifications</th>
+                </tr>
+                <tr *ngFor="let item of jewellery">
+                    <td>{{item.name}}</td>
+                    <td>{{item.price}}</td>
+                    <td>{{item.specifications}}</td>
+                    <td>
+                        <button (click)="remove(item.productId)">Remove</button>
+                    </td>
+                </tr>
+            </td>
+            <td class="main-data">
+                <tr>
+                    <th class="details">Name</th>
+                    <th class="details">Price</th>
+                    <th class="details">specifications</th>
+                </tr>
+                <tr *ngFor="let item of electronics">
+                    <td>{{item.name}}</td>
+                    <td>{{item.price}}</td>
+                    <td>{{item.specifications}}</td>
+                    <td>
+                        <button>Remove</button>
+                    </td>
+                </tr>
+            </td>
+            <td class="main-data">
+                <tr>
+                    <th class="details">Name</th>
+                    <th class="details">Price</th>
+                    <th class="details">specifications</th>
+                </tr>
+                <tr *ngFor="let item of clothes">
+                    <td>{{item.name}}</td>
+                    <td>{{item.price}}</td>
+                    <td>{{item.specifications}}</td>
+                    <td>
+                        <button>Remove</button>
+                    </td>
+                </tr>
+            </td>
+            <td class="main-data">
+                <tr>
+                    <th class="details">Name</th>
+                    <th class="details">Price</th>
+                    <th class="details">specifications</th>
+                </tr>
+                <tr *ngFor="let item of decores">
+                    <td>{{item.name}}</td>
+                    <td>{{item.price}}</td>
+                    <td>{{item.specifications}}</td>
+                    <td>
+                        <button>Remove</button>
+                    </td>
+                </tr>
+            </td>
+        </tr>
+    </tbody>
+</table> -->
+
+<div>
+    <!-- Display data from the API -->
+    <!-- <ul>
+      <li *ngFor="let item of data">
+        <div>{{item.name}}</div>
+        <div>{{item.price}}</div>
+        <div>{{item.specifications}}</div>
+        <div>{{item.img}}</div>
+      </li>
+    </ul> -->
+  
+    <!-- Display pagination controls -->
+    <div>
+      <button [disabled]="currentPage === 1" (click)="onPageChange(currentPage - 1)">
+        Previous
+      </button>
+      <span>{{ currentPage }}</span>
+      <button [disabled]="currentPage * pageSize >= totalItems" (click)="onPageChange(currentPage + 1)">
+        Next
+      </button>
+    </div>
+  </div>
+  
+
+
+*************************************************All Products**********************************************************
+<div class="product-container" >
+    <div class="product" *ngFor="let item of data">
+        <img src="{{item.img}}" alt="{{item.name}}">
+        <h1>{{item.name}}</h1>
+        <p class="price">&#x20B9; {{item.price}}</p>
+        <p id="specs">{{item.specifications}}</p>
+        <p class="buttons">
+            <button (click)="remove(item.productId)">Remove</button>
+    </div>
+</div>

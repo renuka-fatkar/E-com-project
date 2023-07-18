@@ -1,0 +1,12 @@
+<div class="seller-auth">
+    <div class="sign-up">
+        <h1>Enter Your Details</h1>
+        <form #orderDetails="ngForm" (ngSubmit)="placeOrderWithDetails(orderDetails.value)" class="common-form">
+            <input class="form-input" type="text" ngModel  name="name" placeholder="Enter Name">
+            <input class="form-input" type="text" ngModel  name="address" placeholder="Enter Address">
+            <input class="form-input" type="text" ngModel  name="phone" placeholder="Enter Phone Number">
+            <input class="form-input" type="number" ngModel  name="quantity" placeholder="Enter Quantity">
+            <button class="form-button">Place Order</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="product-container" >
+    <div class="product" *ngFor="let item of productList">
+        <img src="{{item.img}}" alt="{{item.name}}">
+        <h1>{{item.name}}</h1>
+        <p class="price">&#x20B9; {{item.price}}</p>
+        <p id="specs">{{item.specifications}}</p>
+        <p class="buttons">
+            <button (click)="addToCart(item.productId,item.name,item.price,item.specifications,item.img)">Add to Cart</button>
+            <button (click)="orderForm((item.productId).toString(),item.price)">Buy Now</button>
+            <button (click)="rateTheProduct(item.productId)">Rate the Product</button></p>
+    </div>
+</div>

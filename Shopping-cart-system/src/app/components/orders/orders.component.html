@@ -1,0 +1,15 @@
+
+    <div>
+        <h1>Your Orders are on the way</h1>
+        <h1>{{empty}}</h1>
+        <div class="cart" *ngFor="let item of userOrdders">
+            <div class="details">
+                <h1>{{item.nameOfUser}}</h1>
+                <p>{{item.order_date}}</p>
+                <p>Quantity: {{item.quantity}}</p>
+                <p>Price: &#x20B9; {{item.amount}}</p>
+                <p>Your Address: {{item.addressOfCust}}</p>
+                <button class="button">Cancel Order</button>
+            </div>
+        </div>
+    </div>

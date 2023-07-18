@@ -1,0 +1,96 @@
+.heading{
+  text-align: center;
+}
+.bill{
+    display: block;
+}
+
+.main-cart{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.cart{
+    height: 350px;
+    width: 100%;
+    border: 1px solid violet;
+    display: flex;
+}
+
+img{
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: inline-block;
+    height: 300px;
+}
+
+.details{
+    display: inline-block;
+    width: 500px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 10px;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: linear-gradient(to bottom right, #00c6ff, #0072ff);
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 4px 0px #0072ff;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 0px #0072ff;
+  }
+  
+  .button:active {
+    transform: translateY(0px);
+    box-shadow: none;
+    background-image: linear-gradient(to bottom right, #0072ff, #00c6ff);
+  }
+  
+  .button:before,
+  .button:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  
+  .button:before {
+    top: -3px;
+    left: -3px;
+    border-radius: 40px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+  }
+  
+  .button:after {
+    bottom: -3px;
+    right: -3px;
+    border-radius: 40px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+  }
+  
+.bill{
+    margin-left: 10px;
+    text-align: center;
+    height: 50px;
+    width: 50%;
+    display: flex;
+    background-color: violet;
+    border-radius: 5px;
+}
+
+.bill h3{
+  margin-left: 20px;
+  margin-right: 20px;
+}

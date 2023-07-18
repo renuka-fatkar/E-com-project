@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <title>Friday Video</title>
+</head>
+
+<body>
+  <div id='navBar'>
+    <div id='topHalf'>
+      <div id='logoWrapper'>
+      <img id='logo' src="assets/logo.png" />
+      </div>
+      <input id="search" type="text" [(ngModel)]="textInput" (ngModelChange)="onInputChange(textInput)" placeholder="What are you looking for?" />
+      <button (click)="refreshPage()">Go</button>
+    </div>
+    <div id="sections">
+      <!-- <div id='department'>Departments</div> -->
+        <select id="options">
+          <option id='department' value="" selected="selected">Departments</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+
+      <ul id="section1">
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/clothes">Clothes</a></li>
+        <li><a routerLink="/electronics">Electronics</a></li>
+        <li><a routerLink="/jewellery">Jewellery</a></li>
+        <li><a routerLink="/decores">Decores</a></li>
+      </ul>
+      <ul id="section2">
+        <li><button (click)="navigateAllProduct()">AllProducts</button></li>
+        <li><a button (click)="sellerlogin()">Seller Login</a></li>
+        <li><a button (click)="userlogin()">User Login</a></li>
+        <li><button (click)="logout()">Logout</button></li>
+        <li><a routerLink="/register">Register</a></li>
+        <li><button (click)="navigateCart()">Cart</button></li>
+        <li><button (click)="navigateOrder()">Order</button></li>
+        <li><a routerLink="/help">Help</a></li>
+       </ul>
+     </div> 
+   </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<h1 class="heading">Shopping Cart</h1>
+    
+<div class="main-cart">
+    <div>
+        <h1>{{empty}}</h1>
+        <div class="cart" *ngFor="let item of cart">
+            <img src="{{item.img}}" alt="item.prodName">
+            <div class="details">
+                <h1>{{item.prodName}}</h1>
+                <p>{{item.specifications}}</p>
+                <p>Quantity: {{item.quantity}}</p>
+                <p>Price: &#x20B9; {{item.price}}</p>
+                <button (click)="removeFromCart(item.cartId)" class="button">Remove</button>
+                <button (click)="orderForm((item.prodId).toString(),item.price)" class="button">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="bill">
+        <h3>Total Bill: &#x20B9; {{bill}}</h3>
+        <button [disabled]="bill===0" (click)="orderFormForAll()" class="button">Checkout Now!</button>
+    </div>
+</div>  
+    
+    

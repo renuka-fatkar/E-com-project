@@ -1,0 +1,65 @@
+h1, h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  form div {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  hr {
+    margin: 30px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+  
+  div.rating-item {
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rating-item p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
